@@ -1,29 +1,31 @@
 {
-  "name": "git-pals",
-  "description": "Find people to practice your git skills with",
+  "name": "Django-Portfolio",
+  "homepage": "zacharilius.me",
+  "description": "My portfolio created in Django 1.7. It also includes projects also written in Django",
   "main": "",
   "moduleType": [],
   "keywords": [
     "git",
-    "django",
-    "python3"
+    "python",
+    "django1.7",
+    "portfolio",
+    "zacharilius"
   ],
   "authors": [
     "zacharilius"
   ],
   "license": "MIT",
-  "homepage": "",
   "private": true,
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
-    "gitPals/static/components",
+    "zacharilius/static/components",
     "test",
     "tests"
   ],
   "dependencies": {
-    "material-design-lite": "~1.0.5",
-    "jquery": "~2.1.4"
+    "jquery": "~2.1.4",
+    "material-design-lite": "~1.0.5"
   }
 }

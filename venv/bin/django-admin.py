@@ -1,4 +1,4 @@
-#!/Users/Machine/Documents/GitHub/git-pals/venv/bin/python3
+#!/Users/Machine/Documents/GitHub/Django-Portfolio/venv/bin/python3.4
 from django.core import management
 
 if __name__ == "__main__":

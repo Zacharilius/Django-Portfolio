@@ -1,5 +1,5 @@
 """
-Django settings for gitPals project.
+Django settings for zacharilius project.
 
 For more information on this file, see
 https://docs.djangoproject.com/en/1.7/topics/settings/
@@ -17,7 +17,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'dihz#yrtz2zz50io=a(4d*2y60&tr(hai-#%f92#7h0r)rnsb7'
+SECRET_KEY = '4mqf(y-fu9oaj*6*29p3l@z7roge28ux3smiyteu($^xt%)o(*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -42,7 +42,6 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-	'gitPalsApp',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -55,9 +54,9 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'gitPals.urls'
+ROOT_URLCONF = 'zacharilius.urls'
 
-WSGI_APPLICATION = 'gitPals.wsgi.application'
+WSGI_APPLICATION = 'zacharilius.wsgi.application'
 
 
 # Database
