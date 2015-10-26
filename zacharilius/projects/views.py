@@ -4,4 +4,5 @@ from django.http import HttpResponse
 
 # Create your views here.
 def index(request):
-    return HttpResponse("Projects")
+    context_dict = {'boldmessage': 'I am bolded'}
+    return render(request, 'projects/index.html', context_dict)
