@@ -2,8 +2,20 @@ body{
   background-color:
 }
 .zwb-navigation{
-
 }
 .zwb-navigation a{
     text-transform: uppercase;
+    border-bottom: 3px solid transparent;
+
+}
+.mdl-layout__header-row a:hover,
+.mdl-layout__header-row a:active {
+    opacity: .8;
+}
+.is-active{
+    opacity: .8;
+    border-bottom-color: #FFC107 !important;
+}
+.mdl-layout__header{
+    background-color: #009688;
 }

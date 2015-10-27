@@ -46,6 +46,7 @@ INSTALLED_APPS = (
     'portfolio',
     'projects',
     'user_auth',
+    'maps',
 )
 
 MIDDLEWARE_CLASSES = (

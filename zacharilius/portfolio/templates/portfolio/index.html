@@ -1,5 +1,16 @@
 {% extends "portfolio/base_template_header.html" %}
+{% load staticfiles %}
+
+{% block page_title %}Zacharilius {% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'portfolio/css/portfolio.css' %}">
+<link rel="stylesheet" href="{% static 'components/material-design-lite/styles.css' %}">
+{% endblock %}
 {% block content %}
 
-<h1>Portfolio</h1>
+<div class="image-cropper">
+	<img class="center-image" alt="seattleSkyline" id="seattlePic" src="{% static 'portfolio/images/sampleSeattleSkyline.png' %}"/>
+</div>
+
 {% endblock %}

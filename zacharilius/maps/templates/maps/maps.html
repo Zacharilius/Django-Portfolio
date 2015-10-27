@@ -1,4 +1,14 @@
 {% extends "portfolio/base_template_header.html" %}
+
+{% load staticfiles %}
+
+{% block page_title %}Zacharilius - Maps {% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/portfolio.css' %}">
+<link rel="stylesheet" href="{% static 'components/material-design-lite/styles.css' %}">
+{% endblock %}
+
 {% block content %}
 <div class="mdl-layout__tab-panel is-active" id="overview">
     <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
