@@ -4,5 +4,5 @@ from django.http import HttpResponse
 
 # Create your views here.
 def index(request):
-    context_dict = {'boldmessage': 'I am bolded'}
+    context_dict = {'nav': 'maps'}
     return render(request, 'maps/maps.html', context_dict)

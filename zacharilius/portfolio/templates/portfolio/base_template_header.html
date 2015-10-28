@@ -48,8 +48,12 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en"
           rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'components/icomoon/style.css' %}">
     <link rel="stylesheet" href="{% static 'components/material-design-lite/material.min.css' %}">
-    <link rel="stylesheet" href="{% static 'components/material-design-lite/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'portfolio/css/navigation.css' %}">
+
+    <link rel="stylesheet" href="dist/css/style.css" />
+
 
     {% block css %}
     {% endblock %}
@@ -60,24 +64,31 @@
         <div class="mdl-layout__header-row">
             <span class="mdl-layout-title">Zachary Bensley</span>
             <nav class="mdl-navigation zwb-navigation">
-                <a class="mdl-navigation__link is-active" href="/">Home</a>
-                <a class="mdl-navigation__link" href="/projects">Projects</a>
-                <a class="mdl-navigation__link" href="/maps">Maps</a>
+                <a class="mdl-navigation__link {% if nav == 'home' %}is-active{% endif %}" href="/">Home</a>
+                <a class="mdl-navigation__link {% if nav == 'projects' %}is-active{% endif %}" href="/projects">Projects</a>
+                <a class="mdl-navigation__link {% if nav == 'maps' %}is-active{% endif %}" href="/maps">Maps</a>
             </nav>
             <div class="mdl-layout-spacer"></div>
-            <!-- start search form -->
-            <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
-                <label class="mdl-button mdl-js-button mdl-button--icon" for="search-expandable">
-                    <i class="material-icons">search</i>
-                </label>
-
-                <div class="mdl-textfield__expandable-holder">
-                    <input class="mdl-textfield__input" type="text" id="search-expandable"/>
-                    <label class="mdl-textfield__label" for="search-expandable">Search text</label>
-                </div>
-            </div>
-            <!-- end search form -->
-
+            <a class="mdl-button mdl-js-button mdl-button--icon" href="http://www.github.com/zacharilius">
+            <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
+                <span aria-hidden="true" class="icon icon-github"></span>
+            </button>
+            </a>
+            <a class="mdl-button mdl-js-button mdl-button--icon" href="http://codepen.io/zacharilius/">
+            <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
+                <span aria-hidden="true" class="icon icon-codepen"></span>
+            </button>
+            </a>
+            <a class="mdl-button mdl-js-button mdl-button--icon" href="https://www.linkedin.com/in/zabensley">
+            <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
+                <span aria-hidden="true" class="icon icon-linkedin"></span>
+            </button>
+            </a>
+            <a class="mdl-button mdl-js-button mdl-button--icon" href="https://instagram.com/zacharilius/">
+            <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
+                <span aria-hidden="true" class="icon icon-instagram"></span>
+            </button>
+            </a>
         </div>
     </header>
     <div class="mdl-layout__drawer">
@@ -90,10 +101,11 @@
             <a class="mdl-navigation__link" href="#">Blog</a>
         </nav>
     </div>
-
 {% block content %} {% endblock %}
 
 </div>
+<script src="{% static 'components/jquery/dist/jquery.min.js' %}"></script>
 <script src="{% static 'components/material-design-lite/material.min.js' %}"></script>
+<script src="{% static 'portfolio/js/portfolio.js' %}"></script>
 </body>
 </html>

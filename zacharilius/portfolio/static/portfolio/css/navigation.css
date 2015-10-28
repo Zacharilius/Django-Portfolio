@@ -1,5 +1,5 @@
 body{
-  background-color:
+  overflow-y: scroll;
 }
 .zwb-navigation{
 }
@@ -8,14 +8,17 @@ body{
     border-bottom: 3px solid transparent;
 
 }
-.mdl-layout__header-row a:hover,
-.mdl-layout__header-row a:active {
+.mdl-navigation__link{
     opacity: .8;
 }
+.mdl-layout__header-row a:hover,
+.mdl-layout__header-row a:active {
+    opacity: 1;
+}
 .is-active{
-    opacity: .8;
+    opacity: 1;
     border-bottom-color: #FFC107 !important;
 }
 .mdl-layout__header{
-    background-color: #009688;
+    background-color: #00796B;
 }

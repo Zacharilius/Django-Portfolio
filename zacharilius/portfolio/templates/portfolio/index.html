@@ -5,9 +5,12 @@
 
 {% block css %}
 <link rel="stylesheet" href="{% static 'portfolio/css/portfolio.css' %}">
-<link rel="stylesheet" href="{% static 'components/material-design-lite/styles.css' %}">
 {% endblock %}
 {% block content %}
+<div class="center-text">
+	<h1 class='title'>Zachary Bensley</h1>
+	<h2 class='sub-title'>Full Stack Developer</h2>
+</div>
 
 <div class="image-cropper">
 	<img class="center-image" alt="seattleSkyline" id="seattlePic" src="{% static 'portfolio/images/sampleSeattleSkyline.png' %}"/>
