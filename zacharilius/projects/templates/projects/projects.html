@@ -1,70 +1,67 @@
 {% extends "portfolio/base_template_header.html" %}
 {% load staticfiles %}
 
+
 {% block page_title %}Zacharilius - Projects {% endblock %}
 
 {% block css %}
-<style>
-    .mdl-cell{
-        background-color: red;
-    }
+<link rel="stylesheet" href="{% static 'projects/css/projects.css' %}">
 
-</style>
 {% endblock %}
 {% block content %}
+
 <div class="mdl-grid">
-    <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet">6 (8 tablet)</div>
-    <div class="mdl-cell mdl-cell--4-col mdl-cell--6-col-tablet">4 (6 tablet)</div>
-    <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-phone">2 (4 phone)</div>
+    <div class="mdl-cell mdl-cell--1-col "></div>
+    <div class="mdl-cell mdl-cell--10-col"><h1>Project Portfolio</h1></div>
+    <div class="mdl-cell mdl-cell--1-col "></div>
 </div>
 <div class="mdl-grid">
-    <div class="mdl-cell mdl-cell--10-col ">10</div>
-</div>
-<!--
-<div class="container">
-    <div class="row">
-        <div class="col-md-12"><h1>Project Portfolio</h1></div>
-    </div>
-    <div class="project">
-        <div class="row">
-            <div class="col-sm-8">
-                <div class="picture-container"><img class="picture-item project-image img-responsive"
-                                                    ng-src="{{p1image}}" alt="Right Image Issue"></div>
-            </div>
-            <div class="col-sm-1 col-xs-12">
-                <div ng-click='setImage("p1", "desktop")' class="screenType btn" ng-class="isActive('p1', 'desktop')">
-                    <span class="icon-display"></span></div>
-                <div ng-click='setImage("p1", "tablet")' class="screenType btn" ng-class="isActive('p1', 'tablet')">
-                    <span class="icon-tablet"></span></div>
-                <div ng-click='setImage("p1", "mobile")' class="screenType btn" ng-class="isActive('p1', 'mobile')">
-                    <span class="icon-mobile2"></span></div>
-            </div>
-            <div class="col-sm-3">
-                <h1 class="title">Odd-Job</h1>
-
-                <p class="project-text">Odd-Job is a job posting site that specializes in odd jobs. It allows users to
-                    find and
-                    post odd-jobs around the Greater Seattle Area.</p>
-
-                <p><span class="technologies">HTML5</span><span class="technologies">AngularJS</span><span
-                        class="technologies">GoogleMapsAPI</span>
-                    <span class="technologies">Google Endpoints</span><span class="technologies">Java</span><span
-                            class="technologies">Oauth 2.0</span>
-                    <span class="technologies">JavaScript</span><span class="technologies">CSS3</span></p>
-                <a href="https://www.github.com/zacharilius/odd-job">
-                    <button type="button" class="btn btn-default btn-md">
-                        <span class="icon-github" aria-hidden="true"></span> GitHub
-                    </button>
-                </a>
-                <a href="https://odd-job.appspot.com">
-                    <button type="button" class="btn btn-default btn-md">
-                        <span aria-hidden="true"><img class="project-button-img"
-                                                      src="/images/project/odd-job.png"></span> Odd-Job
-                    </button>
-                </a>
-            </div>
+    <div class="mdl-cell mdl-cell--1-col "></div>
+    <div class="mdl-cell mdl-cell--6-col">
+        <div class="picture-container">
+            <img src="{% static 'projects/images/odd-job_DesktopView.png' %}" class="picture-container img-responsive" alt="Right Image Issue"/>
         </div>
     </div>
+    <div class="mdl-cell mdl-cell--1-col">
+        <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+            <i class="mdl-icon">desktop_mac</i>
+        </button>
+        <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+            <i class="mdl-icon">tablet_mac</i>
+        </button>
+        <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+            <i class="mdl-icon">phone_iphone</i>
+        </button>
+        <i class="md-icon dp48">tablet_mac</i>
+    </div>
+    <div class="mdl-cell mdl-cell--4-col">
+        <h1 class="title">Odd-Job</h1>
+
+        <p class="project-text">Odd-Job is a job posting site that specializes in odd jobs. It allows users to
+            find and
+            post odd-jobs around the Greater Seattle Area.</p>
+
+        <p><span class="technologies">HTML5</span><span class="technologies">AngularJS</span><span
+                class="technologies">GoogleMapsAPI</span>
+            <span class="technologies">Google Endpoints</span><span class="technologies">Java</span><span
+                    class="technologies">Oauth 2.0</span>
+            <span class="technologies">JavaScript</span><span class="technologies">CSS3</span></p>
+        <a href="https://www.github.com/zacharilius/odd-job">
+            <button type="button" class="btn btn-default btn-md">
+                <span class="icon-github" aria-hidden="true"></span> GitHub
+            </button>
+        </a>
+        <a href="https://odd-job.appspot.com">
+            <button type="button" class="btn btn-default btn-md">
+                        <span aria-hidden="true">
+                            <img class="project-button-img" src="{% static 'projects/images/odd-job.png' %}">
+                        </span> Odd-Job
+            </button>
+        </a>
+    </div>
+</div>
+
+<!--
     <div class="project">
         <div class="row">
             <div class="col-md-3 ">
