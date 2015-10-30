@@ -19,18 +19,21 @@
     <div class="mdl-cell mdl-cell--1-col "></div>
     <div class="mdl-cell mdl-cell--6-col">
         <div class="picture-container">
-            <img src="{% static 'projects/images/odd-job_DesktopView.png' %}" class="picture-container img-responsive"
+            <img src="{% static 'projects/images/odd-job_DesktopView.png' %}"  id = "odd-job-desktop-pic" class="picture-container img-responsive odd-job-pic"
                  alt="Right Image Issue"/>
-        </div>
+            <img src="{% static 'projects/images/odd-job_TabletView.png' %}" id = "odd-job-tablet-pic" class="picture-container img-responsive odd-job-pic"
+                 alt="Right Image Issue" style="display: none;"/>
+            <img src="{% static 'projects/images/odd-job_PhoneView.png' %}" id = "odd-job-mobile-pic" class="picture-container img-responsive odd-job-pic"
+                 alt="Right Image Issue" style="display: none;"/>        </div>
     </div>
     <div class="mdl-cell mdl-cell--1-col">
-        <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+        <button class="mdl-button mdl-js-button mdl-js-ripple-effect" id = "odd-job-desktop-button">
             <i class="material-icons">desktop_mac</i>
         </button>
-        <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+        <button class="mdl-button mdl-js-button mdl-js-ripple-effect" id = "odd-job-tablet-button">
             <i class="material-icons">tablet_mac</i>
         </button>
-        <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+        <button class="mdl-button mdl-js-button mdl-js-ripple-effect" id = "odd-job-mobile-button">
             <i class="material-icons">phone_iphone</i>
         </button>
     </div>
@@ -60,7 +63,102 @@
         </a>
     </div>
 </div>
+<div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--1-col "></div>
+    <div class="mdl-cell mdl-cell--6-col">
+        <div class="picture-container">
+            <img src="{% static 'projects/images/odd-job_DesktopView.png' %}"  id = "odd-job-desktop-pic" class="picture-container img-responsive odd-job-pic"
+                 alt="Right Image Issue"/>
+            <img src="{% static 'projects/images/odd-job_TabletView.png' %}" id = "odd-job-tablet-pic" class="picture-container img-responsive odd-job-pic"
+                 alt="Right Image Issue" style="display: none;"/>
+            <img src="{% static 'projects/images/odd-job_PhoneView.png' %}" id = "odd-job-mobile-pic" class="picture-container img-responsive odd-job-pic"
+                 alt="Right Image Issue" style="display: none;"/>        </div>
+    </div>
+    <div class="mdl-cell mdl-cell--1-col">
+        <button class="mdl-button mdl-js-button mdl-js-ripple-effect" id = "odd-job-desktop-button">
+            <i class="material-icons">desktop_mac</i>
+        </button>
+        <button class="mdl-button mdl-js-button mdl-js-ripple-effect" id = "odd-job-tablet-button">
+            <i class="material-icons">tablet_mac</i>
+        </button>
+        <button class="mdl-button mdl-js-button mdl-js-ripple-effect" id = "odd-job-mobile-button">
+            <i class="material-icons">phone_iphone</i>
+        </button>
+    </div>
+    <div class="mdl-cell mdl-cell--4-col">
+        <h1 class="title">Odd-Job</h1>
 
+        <p class="project-text">Odd-Job is a job posting site that specializes in odd jobs. It allows users to
+            find and
+            post odd-jobs around the Greater Seattle Area.</p>
+
+        <p><span class="technologies">HTML5</span><span class="technologies">AngularJS</span><span
+                class="technologies">GoogleMapsAPI</span>
+            <span class="technologies">Google Endpoints</span><span class="technologies">Java</span><span
+                    class="technologies">Oauth 2.0</span>
+            <span class="technologies">JavaScript</span><span class="technologies">CSS3</span></p>
+        <a href="https://www.github.com/zacharilius/odd-job">
+            <button type="button" class="btn btn-default btn-md">
+                <span class="icon-github" aria-hidden="true"></span> GitHub
+            </button>
+        </a>
+        <a href="https://odd-job.appspot.com">
+            <button type="button" class="btn btn-default btn-md">
+                        <span aria-hidden="true">
+                            <img class="project-button-img" src="{% static 'projects/images/odd-job.png' %}">
+                        </span> Odd-Job
+            </button>
+        </a>
+    </div>
+</div>
+<div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--1-col "></div>
+    <div class="mdl-cell mdl-cell--6-col">
+        <div class="picture-container">
+            <img src="{% static 'projects/images/odd-job_DesktopView.png' %}"  id = "odd-job-desktop-pic" class="picture-container img-responsive odd-job-pic"
+                 alt="Right Image Issue"/>
+            <img src="{% static 'projects/images/odd-job_TabletView.png' %}" id = "odd-job-tablet-pic" class="picture-container img-responsive odd-job-pic"
+                 alt="Right Image Issue" style="display: none;"/>
+            <img src="{% static 'projects/images/odd-job_PhoneView.png' %}" id = "odd-job-mobile-pic" class="picture-container img-responsive odd-job-pic"
+                 alt="Right Image Issue" style="display: none;"/>        </div>
+    </div>
+    <div class="mdl-cell mdl-cell--1-col">
+        <button class="mdl-button mdl-js-button mdl-js-ripple-effect" id = "odd-job-desktop-button">
+            <i class="material-icons">desktop_mac</i>
+        </button>
+        <button class="mdl-button mdl-js-button mdl-js-ripple-effect" id = "odd-job-tablet-button">
+            <i class="material-icons">tablet_mac</i>
+        </button>
+        <button class="mdl-button mdl-js-button mdl-js-ripple-effect" id = "odd-job-mobile-button">
+            <i class="material-icons">phone_iphone</i>
+        </button>
+    </div>
+    <div class="mdl-cell mdl-cell--4-col">
+        <h1 class="title">Odd-Job</h1>
+
+        <p class="project-text">Odd-Job is a job posting site that specializes in odd jobs. It allows users to
+            find and
+            post odd-jobs around the Greater Seattle Area.</p>
+
+        <p><span class="technologies">HTML5</span><span class="technologies">AngularJS</span><span
+                class="technologies">GoogleMapsAPI</span>
+            <span class="technologies">Google Endpoints</span><span class="technologies">Java</span><span
+                    class="technologies">Oauth 2.0</span>
+            <span class="technologies">JavaScript</span><span class="technologies">CSS3</span></p>
+        <a href="https://www.github.com/zacharilius/odd-job">
+            <button type="button" class="btn btn-default btn-md">
+                <span class="icon-github" aria-hidden="true"></span> GitHub
+            </button>
+        </a>
+        <a href="https://odd-job.appspot.com">
+            <button type="button" class="btn btn-default btn-md">
+                        <span aria-hidden="true">
+                            <img class="project-button-img" src="{% static 'projects/images/odd-job.png' %}">
+                        </span> Odd-Job
+            </button>
+        </a>
+    </div>
+</div>
 <!--
     <div class="project">
         <div class="row">
@@ -108,4 +206,9 @@
     </div>
 </div>
 -->
+{% endblock %}
+
+{% block script %}
+<script src="{% static 'projects/js/projects.js' %}"></script>
+
 {% endblock %}
