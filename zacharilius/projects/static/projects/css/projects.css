@@ -51,8 +51,8 @@
 .screenType:hover{
 	color: #FFFFFF;
 }
-.screenType:active, .screenType.active {
-	color: #FFFFFF;
+.zws-screen.is-active {
+	color: #FFC107;
 }
 .contact-socialmedia{
 	font-size: 20px;
