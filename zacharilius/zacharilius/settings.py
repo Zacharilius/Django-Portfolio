@@ -100,3 +100,5 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
 	STATIC_PATH,
 )
+
+SPATIALITE_LIBRARY_PATH='/Library/Frameworks/SQLite3.framework/SQLite3'
