@@ -9,41 +9,40 @@
 {% endblock %}
 
 {% block content %}
-<div class="MapCtrl">
-    <div ng-controller="MapCoffeeCtrl">
+<div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--1-col "></div>
+    <div class="mdl-cell mdl-cell--10-col">
         <div class="map-container map-odd">
             <h2>2011 Global Coffee Production</h2>
             <h5>Displays coffee production of member countries and non-member countries from the <a
                     href="http://www.ico.org/prices/po.htm">International Coffee Organization</a>.</h5>
-            <div id="coffee-mapCanvas"></div>
+
+            <div class="map" id="coffee-mapCanvas"></div>
 
             <a href="https://www.google.com/fusiontables/data?docid=1mOwEVBrCDZxmwDd7gc-sFl3Us2Ux4tGYRiJIXA7E#rows:id=1">
                 <div class="btn btn-default btn-map">Coffee Data</div>
             </a>
         </div>
     </div>
-    <div ng-controller="SeattleBreweriesController">
+</div>
+<div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--1-col "></div>
+    <div class="mdl-cell mdl-cell--10-col">
         <div class="map-container map-even">
             <h2>Washington Breweries</h2>
             <h5>Uses Map Clusterer and Google Maps API to display the location of breweries and brew pubs in
                 Seattle</h5>
-
-            <div class="row">
-                <div class="col-md-12">
-                    <map zoom={{zoom}} center={{center}} scrollwheel={{scrollwheel}}></map>
-                </div>
-            </div>
+            <div class = "map" id="washingtonBreweries-mapCanvas"></div>
         </div>
     </div>
-    <div ng-controller="MapNeighborhoodCtrl">
+</div>
+<div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--1-col "></div>
+    <div class="mdl-cell mdl-cell--10-col">
         <div class="map-container map-odd">
             <h2>Seattle Neighborhood Mapper</h2>
             <h5>Loads Zillow neighborhood data in GeoJSON so people can identify their neighborhoods.</h5>
-            <map zoom={{zoom}} center={{center}} scrollwheel={{scrollwheel}}>
-                <map-data set-style="{fillColor: 'green', strokeWeight: 1}" on-mouseover="onMouseover()"
-                          load-geo-json="{% static 'maps/geoJson/washingtonHoods.json' %}"></map-data>
-            </map>
-            <h1>{{neighborhoodName}}</h1>
+            <div class = "map" id="seattleNeighborhoodMap"></div>
             <a href="http://www.zillow.com/howto/api/neighborhood-boundaries.htm"><img
                     src="{% static 'maps/images/Zillow_Logo_HoodsProvided_RightAligned.gif' %}"/></a>
         </div>
@@ -51,7 +50,6 @@
 </div>
 {% endblock %}
 
-    
 
 {% block script %}
 

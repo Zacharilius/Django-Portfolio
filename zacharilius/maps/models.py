@@ -1,4 +1,5 @@
 from django.db import models
+from djgeojson.fields import PointField
 
 # Create your models here.
 class Breweries(models.Model):
@@ -12,3 +13,7 @@ class Breweries(models.Model):
     
     def __unicode__(self):
         return self.title
+    
+class MushroomSpot(models.Model):
+
+    geom = PointField()
